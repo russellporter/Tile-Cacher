@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^hiking/([^/]+)/([^/]+)/([^/]+)\.png index.php?layer=hiking&x=$2&y=$3&z=$1 [L]
