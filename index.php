@@ -8,9 +8,8 @@ $z = $_GET["z"];
 
 require("config.php");
 
-die($requestUrl);
-
 if($_GET["layer"] != $layer) {
+	// TODO Should return error image
 	die("That layer isn't available");
 }
 
